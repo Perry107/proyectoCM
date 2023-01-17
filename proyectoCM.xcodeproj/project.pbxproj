@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		93F9A190E53B34A5D5D53C95 /* Pods_proyectoCM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB24C7A6F0E39E6C5E67574D /* Pods_proyectoCM.framework */; };
+		FB94DD2C29773AD50020D149 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94DD2B29773AD50020D149 /* SideMenu.swift */; };
+		FB94DD2E29773C1D0020D149 /* Menu1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94DD2D29773C1D0020D149 /* Menu1ViewController.swift */; };
+		FB94DD3029773C2F0020D149 /* Menu2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94DD2F29773C2F0020D149 /* Menu2ViewController.swift */; };
 		FBBE2BB42975E019003D8A72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBE2BB32975E019003D8A72 /* AppDelegate.swift */; };
 		FBBE2BB62975E019003D8A72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBE2BB52975E019003D8A72 /* SceneDelegate.swift */; };
 		FBBE2BB82975E019003D8A72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBE2BB72975E019003D8A72 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 		95C893E238A96C7751F8F08F /* Pods-proyectoCM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyectoCM.debug.xcconfig"; path = "Target Support Files/Pods-proyectoCM/Pods-proyectoCM.debug.xcconfig"; sourceTree = "<group>"; };
 		CCFE447547CDB6D68646C352 /* Pods-proyectoCM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyectoCM.release.xcconfig"; path = "Target Support Files/Pods-proyectoCM/Pods-proyectoCM.release.xcconfig"; sourceTree = "<group>"; };
 		EB24C7A6F0E39E6C5E67574D /* Pods_proyectoCM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proyectoCM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB94DD2B29773AD50020D149 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		FB94DD2D29773C1D0020D149 /* Menu1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu1ViewController.swift; sourceTree = "<group>"; };
+		FB94DD2F29773C2F0020D149 /* Menu2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu2ViewController.swift; sourceTree = "<group>"; };
 		FBBE2BB02975E019003D8A72 /* proyectoCM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoCM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBE2BB32975E019003D8A72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBBE2BB52975E019003D8A72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +54,6 @@
 				95C893E238A96C7751F8F08F /* Pods-proyectoCM.debug.xcconfig */,
 				CCFE447547CDB6D68646C352 /* Pods-proyectoCM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +93,9 @@
 				FBBE2BBC2975E01C003D8A72 /* Assets.xcassets */,
 				FBBE2BBE2975E01C003D8A72 /* LaunchScreen.storyboard */,
 				FBBE2BC12975E01C003D8A72 /* Info.plist */,
+				FB94DD2B29773AD50020D149 /* SideMenu.swift */,
+				FB94DD2D29773C1D0020D149 /* Menu1ViewController.swift */,
+				FB94DD2F29773C2F0020D149 /* Menu2ViewController.swift */,
 			);
 			path = proyectoCM;
 			sourceTree = "<group>";
@@ -209,7 +217,10 @@
 			files = (
 				FBBE2BB82975E019003D8A72 /* ViewController.swift in Sources */,
 				FBBE2BB42975E019003D8A72 /* AppDelegate.swift in Sources */,
+				FB94DD3029773C2F0020D149 /* Menu2ViewController.swift in Sources */,
 				FBBE2BB62975E019003D8A72 /* SceneDelegate.swift in Sources */,
+				FB94DD2C29773AD50020D149 /* SideMenu.swift in Sources */,
+				FB94DD2E29773C1D0020D149 /* Menu1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
