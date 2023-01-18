@@ -8,36 +8,42 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tablaInicio: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        carritoI.add(producto: agua)
-        carritoI.add(producto: aguaJamaica)
-        carritoI.add(producto: agua)
+        inventarioL.add(producto: agua)
+        inventarioL.add(producto: aguaJamaica)
         
-        print("Resultado",carritoI.carrito[1].cantidad)
+        tablaInicio.delegate = self
+        tablaInicio.dataSource = self
         
-        print(carritoI.carrito[0].name)
-        print(carritoI.carrito[1].id)
-        
-        carritoI.del(producto: agua)
-        
-        for (index,producto) in carritoI.carrito.enumerated(){
-            print(index,".",producto.name)
         }
-        
-        carritoI.add(producto: agua)
-        carritoI.add(producto: aguaJamaica)
-        
-        for (index,producto) in carritoI.carrito.enumerated(){
-            print(index,".",producto.name)
-        }
-        
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return inventarioL.lista.count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellI = tableView.dequeueReusableCell(withIdentifier: "celdaI", for: indexPath)
+        cellI.textLabel?.text = inventarioL.lista[indexPath.row].name
+        return cellI
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "enviar"{
+            let indexPath = tablaInicio.indexPathForSelectedRow
+            
+            let destino = segue.destination as! ProductoViewController
+            
+            destino.enviada = inventarioL.lista[(indexPath?.row)!]
+        }
+    }
+        
 }
+    
 

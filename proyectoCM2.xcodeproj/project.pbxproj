@@ -15,11 +15,13 @@
 		FB42922529772F3A002957E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB42922429772F3A002957E4 /* Assets.xcassets */; };
 		FB42922829772F3A002957E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB42922629772F3A002957E4 /* LaunchScreen.storyboard */; };
 		FB42923029772FB2002957E4 /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42922F29772FB2002957E4 /* OrangeViewController.swift */; };
-		FB42923429773352002957E4 /* carrito.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42923329773352002957E4 /* carrito.swift */; };
 		FB42923629773459002957E4 /* producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42923529773459002957E4 /* producto.swift */; };
 		FB7E557129787822000E2484 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E557029787822000E2484 /* SecondViewController.swift */; };
 		FB7E557329787FCA000E2484 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E557229787FCA000E2484 /* ThirdViewController.swift */; };
 		FB7E557529788112000E2484 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E557429788112000E2484 /* FourthViewController.swift */; };
+		FBD660092978A9EF0080CB9B /* listaProductos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD660082978A9EE0080CB9B /* listaProductos.swift */; };
+		FBD6600B2978A9F70080CB9B /* listas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6600A2978A9F70080CB9B /* listas.swift */; };
+		FBD6600D2978B04E0080CB9B /* ProductoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6600C2978B04E0080CB9B /* ProductoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +35,13 @@
 		FB42922729772F3A002957E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB42922929772F3A002957E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB42922F29772FB2002957E4 /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
-		FB42923329773352002957E4 /* carrito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carrito.swift; sourceTree = "<group>"; };
 		FB42923529773459002957E4 /* producto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = producto.swift; sourceTree = "<group>"; };
 		FB7E557029787822000E2484 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FB7E557229787FCA000E2484 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		FB7E557429788112000E2484 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		FBD660082978A9EE0080CB9B /* listaProductos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listaProductos.swift; sourceTree = "<group>"; };
+		FBD6600A2978A9F70080CB9B /* listas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listas.swift; sourceTree = "<group>"; };
+		FBD6600C2978B04E0080CB9B /* ProductoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +77,19 @@
 				FB42921B29772F38002957E4 /* AppDelegate.swift */,
 				FB42921D29772F38002957E4 /* SceneDelegate.swift */,
 				FB42921F29772F38002957E4 /* ViewController.swift */,
-				FB42922129772F38002957E4 /* Main.storyboard */,
-				FB42922429772F3A002957E4 /* Assets.xcassets */,
-				FB42922629772F3A002957E4 /* LaunchScreen.storyboard */,
-				FB42922929772F3A002957E4 /* Info.plist */,
-				FB42922F29772FB2002957E4 /* OrangeViewController.swift */,
-				FB42923329773352002957E4 /* carrito.swift */,
-				FB42923529773459002957E4 /* producto.swift */,
 				FB7E557029787822000E2484 /* SecondViewController.swift */,
 				FB7E557229787FCA000E2484 /* ThirdViewController.swift */,
 				FB7E557429788112000E2484 /* FourthViewController.swift */,
 				FB0BFF2029789F4E00D4416E /* FifthViewController.swift */,
+				FB42922F29772FB2002957E4 /* OrangeViewController.swift */,
+				FBD6600C2978B04E0080CB9B /* ProductoViewController.swift */,
+				FB42922129772F38002957E4 /* Main.storyboard */,
+				FB42922429772F3A002957E4 /* Assets.xcassets */,
+				FB42922629772F3A002957E4 /* LaunchScreen.storyboard */,
+				FB42922929772F3A002957E4 /* Info.plist */,
+				FBD6600A2978A9F70080CB9B /* listas.swift */,
+				FBD660082978A9EE0080CB9B /* listaProductos.swift */,
+				FB42923529773459002957E4 /* producto.swift */,
 			);
 			path = proyectoCM2;
 			sourceTree = "<group>";
@@ -162,13 +168,15 @@
 				FB0BFF2129789F4E00D4416E /* FifthViewController.swift in Sources */,
 				FB7E557129787822000E2484 /* SecondViewController.swift in Sources */,
 				FB7E557329787FCA000E2484 /* ThirdViewController.swift in Sources */,
-				FB42923429773352002957E4 /* carrito.swift in Sources */,
 				FB42923629773459002957E4 /* producto.swift in Sources */,
 				FB7E557529788112000E2484 /* FourthViewController.swift in Sources */,
 				FB42923029772FB2002957E4 /* OrangeViewController.swift in Sources */,
+				FBD6600B2978A9F70080CB9B /* listas.swift in Sources */,
 				FB42922029772F38002957E4 /* ViewController.swift in Sources */,
 				FB42921C29772F38002957E4 /* AppDelegate.swift in Sources */,
 				FB42921E29772F38002957E4 /* SceneDelegate.swift in Sources */,
+				FBD6600D2978B04E0080CB9B /* ProductoViewController.swift in Sources */,
+				FBD660092978A9EF0080CB9B /* listaProductos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,17 +10,18 @@ import UIKit
 class OrangeViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return carritoI.carrito.count
+        return carritoL.lista.count
     }
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = carritoI.carrito[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
+        cell.textLabel?.text = carritoL.lista[indexPath.row].name
         
         return cell
     }
     
+
     @IBOutlet weak var tablaCarrito: UITableView!
     
  
