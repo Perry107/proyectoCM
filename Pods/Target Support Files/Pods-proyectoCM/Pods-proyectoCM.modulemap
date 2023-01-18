@@ -1,6 +1,0 @@
-framework module Pods_proyectoCM {
-  umbrella header "Pods-proyectoCM-umbrella.h"
-
-  export *
-  module * { export * }
-}
