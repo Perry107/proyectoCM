@@ -31,6 +31,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaT", for: indexPath)
         cell.textLabel?.text = categoria1.lista[indexPath.row].name
+        cell.imageView?.image = UIImage(named: categoria1.lista[indexPath.row].imagen)
         return cell
     }
     

@@ -30,6 +30,7 @@ class FourthViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaP", for: indexPath)
         cell.textLabel?.text = categoria3.lista[indexPath.row].name
+        cell.imageView?.image = UIImage(named: categoria3.lista[indexPath.row].imagen)
         return cell
     }
     

@@ -30,6 +30,7 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaM", for: indexPath)
         cell.textLabel?.text = categoria2.lista[indexPath.row].name
+        cell.imageView?.image = UIImage(named: categoria2.lista[indexPath.row].imagen)
         return cell
     }
     

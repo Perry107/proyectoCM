@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB0BFF2129789F4E00D4416E /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0BFF2029789F4E00D4416E /* FifthViewController.swift */; };
 		FB2CA81E2979B4E5003CC45E /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2CA81D2979B4E5003CC45E /* FavoritosViewController.swift */; };
 		FB42921C29772F38002957E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42921B29772F38002957E4 /* AppDelegate.swift */; };
 		FB42921E29772F38002957E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42921D29772F38002957E4 /* SceneDelegate.swift */; };
@@ -26,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB0BFF2029789F4E00D4416E /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		FB2CA81D2979B4E5003CC45E /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
 		FB42921829772F38002957E4 /* proyectoCM2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoCM2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB42921B29772F38002957E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 				FB7E557029787822000E2484 /* SecondViewController.swift */,
 				FB7E557229787FCA000E2484 /* ThirdViewController.swift */,
 				FB7E557429788112000E2484 /* FourthViewController.swift */,
-				FB0BFF2029789F4E00D4416E /* FifthViewController.swift */,
 				FB42922F29772FB2002957E4 /* OrangeViewController.swift */,
 				FBD6600C2978B04E0080CB9B /* ProductoViewController.swift */,
 				FB2CA81D2979B4E5003CC45E /* FavoritosViewController.swift */,
@@ -168,7 +165,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB0BFF2129789F4E00D4416E /* FifthViewController.swift in Sources */,
 				FB7E557129787822000E2484 /* SecondViewController.swift in Sources */,
 				FB7E557329787FCA000E2484 /* ThirdViewController.swift in Sources */,
 				FB42923629773459002957E4 /* producto.swift in Sources */,

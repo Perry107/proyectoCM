@@ -9,6 +9,9 @@ import UIKit
 
 class OrangeViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
+    
+    @IBOutlet weak var total: UILabel!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return carritoL.lista.count
     }
@@ -16,7 +19,7 @@ class OrangeViewController: UIViewController, UITableViewDelegate,UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
-        cell.textLabel?.text = carritoL.lista[indexPath.row].name + "  " + carritoL.lista[indexPath.row].cantidad.description
+        cell.textLabel?.text = carritoL.lista[indexPath.row].name + "   Cant: " +  carritoL.lista[indexPath.row].cantidad.description + " Precio: " + carritoL.lista[indexPath.row].precio.description + " MXN" 
         
         return cell
     }
@@ -51,6 +54,13 @@ class OrangeViewController: UIViewController, UITableViewDelegate,UITableViewDat
         }
     }
     
+    func sumar() -> Float{
+        var suma:Float = 0
+        for cont in carritoL.lista{
+            suma = cont.precio*Float(cont.cantidad) + suma
+        }
+        return suma
+    }
  
     
     override func viewDidLoad() {
@@ -60,6 +70,7 @@ class OrangeViewController: UIViewController, UITableViewDelegate,UITableViewDat
         
         tablaCarrito.delegate = self
         tablaCarrito.dataSource = self
+        total.text = String(sumar())
 
         // Do any additional setup after loading the view.
     }

@@ -32,7 +32,7 @@ class FavoritosViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaF", for: indexPath)
         cell.textLabel?.text = favoritosL.lista[indexPath.row].name
-        
+        cell.imageView?.image = UIImage(named: favoritosL.lista[indexPath.row].imagen)
         return cell
     }
     
