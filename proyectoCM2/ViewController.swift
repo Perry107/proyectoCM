@@ -18,7 +18,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         inventarioL.add(producto: agua)
         inventarioL.add(producto: aguaJamaica)
-        
+        inventarioL.add(producto: celular)
+        for producto in inventarioL.lista{
+            if(producto.categoria == 1){
+                categoria1.add(producto: producto)
+            }
+        }
+        favoritosL.add(producto: celular)
+        favoritosL.add(producto: agua)
         tablaInicio.delegate = self
         tablaInicio.dataSource = self
         

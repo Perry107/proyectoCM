@@ -15,10 +15,12 @@ class listaProductos{
         for (index,productoC) in self.lista.enumerated(){
             if(productoC.id == producto.id){
                 self.lista[index].cantidad+=1
+                print("aumente cantidad")
                 return
             }
         }
         self.lista.append(producto)
+        print("agregue elemento",producto.name)
     }
     func del(producto:producto){
         for (index,productoC) in self.lista.enumerated(){
