@@ -16,7 +16,6 @@ class ProductoViewController: UIViewController {
     @IBOutlet weak var Nombre: UILabel!
     @IBOutlet weak var Descripcion: UILabel!
     @IBOutlet weak var Precio: UILabel!
-    @IBOutlet weak var estrella: UIImageView!
     
     
     @IBAction func Favoritos(_ sender: UIButton) {
@@ -45,11 +44,6 @@ class ProductoViewController: UIViewController {
         ImageView.image = UIImage(named: enviada.imagen)
         Descripcion.text = enviada.descripcion
         Precio.text = enviada.precio.description
-        for producto in favoritosL.lista{
-            if enviada.id == producto.id{
-                estrella.image = UIImage(named: "star.fill")
-            }
-        }
         // Do any additional setup after loading the view.
     }
 
