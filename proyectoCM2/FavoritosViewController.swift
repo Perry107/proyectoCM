@@ -36,6 +36,16 @@ class FavoritosViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "enviarFav" {
+            let indexPath = tablaFavoritos.indexPathForSelectedRow
+            
+            let destino = segue.destination as! ProductoViewController
+            
+            destino.enviada = favoritosL.lista[(indexPath?.row)!]
+        }
+    }
+    
     
 
 }

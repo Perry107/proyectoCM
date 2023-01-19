@@ -310,6 +310,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="lXC-75-B9R" kind="show" identifier="enviarFav" id="dk1-qM-ZfK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -623,7 +626,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="KbN-N3-I0j"/>
-        <segue reference="CfM-89-GuX"/>
+        <segue reference="dk1-qM-ZfK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book" catalog="system" width="128" height="99"/>
