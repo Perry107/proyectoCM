@@ -29,4 +29,7 @@ class listaProductos{
             }
         }
     }
+    func delAll(){
+        self.lista = []
+    }
 }

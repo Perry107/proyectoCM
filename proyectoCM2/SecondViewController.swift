@@ -17,7 +17,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         // Do any additional setup after loading the view.
   
-
+        title = "Tecnologia"
         
         tablaTecno.delegate = self
         tablaTecno.dataSource = self

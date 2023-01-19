@@ -18,6 +18,12 @@ var favoritosL:listaProductos = listaProductos()
 
 var categoria1:listaProductos = listaProductos()
 
+var categoria2:listaProductos = listaProductos()
+
+var categoria3:listaProductos = listaProductos()
+
+var ofertasL:listaProductos = listaProductos()
+
 
 var agua:producto = producto(name: "Agua", precio: 10.1, descripcion:"Agua natural", imagen: "", categoria: 0,id:0)
 

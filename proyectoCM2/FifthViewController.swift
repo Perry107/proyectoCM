@@ -9,31 +9,43 @@ import UIKit
 
 class FifthViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        print(favoritosL.lista.count)
-        return favoritosL.lista.count
-    }
-        
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaF", for: indexPath)
-        cell.textLabel?.text = favoritosL.lista[indexPath.row].name
-        
-        return cell
-    }
     
-    @IBOutlet weak var tablaFavoritos: UITableView!
+    @IBOutlet weak var tablaOfertas: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Favoritos"
+        title = "Ofertas"
         
-        tablaFavoritos.delegate = self
-        tablaFavoritos.dataSource = self
+        tablaOfertas.delegate = self
+        tablaOfertas.dataSource = self
         // Do any additional setup after loading the view.
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        print(ofertasL.lista.count)
+        return ofertasL.lista.count
+    }
+        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaO", for: indexPath)
+        cell.textLabel?.text = ofertasL.lista[indexPath.row].name
+        return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "enviarO" {
+            let indexPath = tablaOfertas.indexPathForSelectedRow
+            
+            let destino = segue.destination as! ProductoViewController
+            
+            destino.enviada = ofertasL.lista[(indexPath?.row)!]
+        }
+    }
+
+    
     
 
 }
